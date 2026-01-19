@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LoginLoom Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2>LoginLoom</h2>
+    <button id="logoutBtn">Logout</button>
+  </nav>
+
+  <!-- User Info -->
+  <section class="user-info">
+    <h3>Welcome, <span id="userEmail">User</span></h3>
+  </section>
+
+  <!-- Dashboard Cards -->
+  <section class="cards">
+    <div class="card" id="expenseCard">
+      <h3>Expense Manager</h3>
+      <p>Track and manage your daily expenses</p>
+    </div>
+
+    <div class="card" id="taskCard">
+      <h3>Task Manager</h3>
+      <p>Manage your daily tasks efficiently</p>
+    </div>
+  </section>
+
+  <!-- Expense Section -->
+  <section id="expenseSection" class="hidden">
+    <h2>Add Expense</h2>
+
+    <form id="expenseForm">
+      <input type="text" id="expenseTitle" placeholder="Expense Title" required />
+      <input type="number" id="expenseAmount" placeholder="Amount" required />
+      
+      <select id="expenseCategory">
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Hostel">Hostel</option>
+        <option value="Shopping">Shopping</option>
+      </select>
+
+      <input type="date" id="expenseDate" required />
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <div class="summary-box">
+  <h3>Total Expense: ₹<span id="totalExpense">0</span></h3>
+</div>
+
+    <ul id="expenseList"></ul>
+  </section>
+
+  <!-- Task Section -->
+  <section id="taskSection" class="hidden">
+    <h2>Add Task</h2>
+
+    <form id="taskForm">
+      <input type="text" id="taskName" placeholder="Task name" required />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="taskList"></ul>
+  </section>
+
+  <script type="module" src="js/dashboard.js"></script>
+
+  <script type="module" src="js/expenses.js"></script>
+
+  <script type="module" src="js/tasks.js"></script>
+
+</body>
+</html>
