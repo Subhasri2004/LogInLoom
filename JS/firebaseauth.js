@@ -1,3 +1,5 @@
+console.log("FIREBASE AUTH LOADED ✅");
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
 import { 
   getAuth, 

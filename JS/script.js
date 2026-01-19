@@ -1,3 +1,5 @@
+console.log("SCRIPT.JS LOADED ✅");
+
 import { auth, db } from "./firebaseauth.js";
 import { 
   createUserWithEmailAndPassword, 
