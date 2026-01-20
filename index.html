@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-    <script type="module" src="JS/firebaseauth.js"></script>
+    <!-- <script type="module" src="js/firebaseauth.js"></script> -->
 </head>
 <body>
     <nav>
@@ -30,8 +30,10 @@
             <input type="password" id="rpassword" name="password">
             <p>Reconform Password</p>
             <input type="password" id="repassword"name="re_password" >
-           <button id="submitSignIn" type="button">Login</button>
-           <button id="submitSignUp" type="button">Signup</button>
+            <p>Already have account?</p>
+           <button id="goToLogin" type="button"> Sign In</button>
+            <button id="submitSignUp" type="button">Signup</button>
+
 
         </form>
     </div>
@@ -51,8 +53,8 @@
               <p class="recover">
                 <a href="#">Recover Password!</a>
               </p>
-              <button  class="btn"  id="submitSignIn">Sign In</button>
-              <button class="btn" id="signUpButton">Sign Up</button>
+              <button  class="btn"  id="submitSignIn" type="button">Sign In</button>
+              <button class="btn" id="signUpButton" type="button">Sign Up</button>
           
          
         </form>

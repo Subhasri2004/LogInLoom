@@ -74,7 +74,7 @@ input{
     background-color: beige;
     border-radius: 20px;
 }
-#signInButton{
+#goToLogin{
     font-size: 18px;
     font-weight: bold;
     margin: 5px px;
@@ -131,9 +131,9 @@ input{
     margin: 10px;
     border-radius: 5px;
     font-size: 1rem;
-    opacity: 0;
-    animation: fadeOut 7s forwards;
+    display: none;
 }
+
 
 @keyframes fadeOut {
     0% { opacity: 1; }
